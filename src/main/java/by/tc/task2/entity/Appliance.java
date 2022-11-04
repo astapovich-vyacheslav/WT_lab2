@@ -1,9 +1,11 @@
 package main.java.by.tc.task2.entity;
 
 
+import java.util.List;
 
 public class Appliance {
     String name;
+    List<String> info;
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -15,5 +17,8 @@ public class Appliance {
 
     public Appliance(String name){
         this.name = name;
+    }
+    public Appliance(List<String> list){
+        this.info = list;
     }
 }
